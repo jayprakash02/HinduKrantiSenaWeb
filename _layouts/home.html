@@ -15,7 +15,7 @@
 
   <meta name="description" content="Extended Bootstrap 4 Template">
   <meta name="author" content="Goran Hrustic">
-  <link rel="icon" href="../assets/svg/favicon.ico">
+  <!-- <link rel="icon" href="../assets/svg/favicon.ico"> -->
 
   <!-- Title -->
 
@@ -33,7 +33,7 @@
   </div>
 
   {% include nav.html %}
-  <section class="p-0 bg-info cover" style="background-image:url(/assets/images/hanuman.jpg)" id="home">
+  <section class="p-0 bg-info cover" style="background-image:url({{ '/assets/images/hanuman.jpg' | prepend:site.baseurl }})" id="home">
     <div class="vh-100 container">
       <div class="row no-gutters justify-content-center align-items-center pt-5 vh-100">
         <div class="col-lg-8 text-white">
