@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+        <!-- Mobile Web-app fullscreen -->
+    
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="mobile-web-app-capable" content="yes">
+    
+        <!-- Meta tags -->
+    
+        <meta name="description" content="Extended Bootstrap 4 Template">
+        <meta name="author" content="Goran Hrustic">
+        <link rel="icon" href="../assets/svg/favicon.ico">
+    
+        <!-- Title -->
+        {% include css.html %}
+    
+        <title>Reveal - Agency template</title>
+    
+    </head>
+  <body>
+    <div class="loader">
+        <div class="spinner-border" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+
+    {% include nav.html %}
+    {{ content }}
+    {% include script.html %}
+  </body>
+</html>
